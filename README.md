@@ -4,11 +4,10 @@ A React-based sports website homepage showcasing major events, best players, and
 
 ## Features
 
-- Responsive navbar with sections: Sports, Best Players, Overall Rank
-- Home page with banner and major events area
-- React Router integration for client-side navigation
-- Simple and clean UI with modern design
-
+-   Responsive navbar with sections: Sports, Best Players, Overall Rank
+-   Home page with banner and major events area
+-   React Router integration for client-side navigation
+-   Simple and clean UI with modern design
 
 ## Installation
 
@@ -32,25 +31,27 @@ text
 
 4. Start development server:
 
-npm start
+npm run dev
 
 text
 
-Open http://localhost:3000 in your browser to see the app.
+Open http://localhost:5173 in your browser to see the app.
 
 ## Project Structure
 
-- `src/components/Navbar.js` - Navbar component with logo and navigation links
-- `src/pages/Home.js` - Home page with banner and events
-- `src/pages/Sports.js`, `BestPlayers.js`, `OverallRank.js` - Pages for each tab section
-- `src/App.js` - Main app with routing logic
+-   `src/components/Navbar` - Navbar component with logo and navigation links
+-   `src/pages/Home` - Home page with banner and events
+-   `src/pages/Sports`, `BestPlayers.js`, `OverallRank.js` - Pages for each tab section
+-   `src/App.tsx` - Main app with routing logic
 
 ## Technologies Used
 
-- React JS
-- React Router DOM
-- JavaScript (ES6+)
-- HTML5 & CSS3
+-   React JS
+-   React Router DOM
+-   TypeScript
+-   Vite
+-   HTML5 & CSS3
+-   Tailwind CSS
 
 ## Contributing
 
