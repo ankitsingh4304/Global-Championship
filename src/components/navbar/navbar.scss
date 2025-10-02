@@ -1,0 +1,96 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 50px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: all 0.3s ease;
+
+	/* Blurred Background Effect (Frosted Glass) */
+	background: rgba(13, 13, 13, 0.85); /* Semi-transparent dark background */
+	backdrop-filter: blur(10px); /* The blurring effect */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Left side: Logo + Text */
+.navbar-left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.navbar-left img {
+	width: 55px; /* Increased logo size */
+	height: 55px; /* Increased logo size */
+	border-radius: 50%;
+	border: 2px solid var(--accent-gold);
+}
+
+.navbar-left a {
+	text-decoration: none;
+	line-height: 1.2;
+	/* --- NEW/UPDATED STYLE --- */
+	display: flex;
+	align-items: center;
+	gap: 12px; /* Space between logo and text block */
+	/* ------------------------- */
+}
+
+/* Text color inside the navbar is bright blue for clarity and sync */
+.navbar-left h1,
+.navbar-left span {
+	color: var(--primary-blue); /* Synced color */
+	text-shadow: none;
+}
+
+.navbar-left h1 {
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.navbar-left span {
+	font-size: 11px; /* Decreased subtitle size */
+	opacity: 0.7;
+	display: block;
+}
+
+/* Right side: Links */
+.navbar-right {
+	display: flex;
+	gap: 40px;
+}
+
+.navbar-right a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 17px;
+	color: var(--primary-blue); /* Synced color */
+	transition: all 0.3s ease;
+	position: relative;
+	letter-spacing: 0.5px;
+}
+
+/* Hover effect */
+.navbar-right a::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 3px;
+	bottom: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--primary-blue); /* Electric blue line */
+	transition: width 0.3s ease-in-out;
+}
+
+.navbar-right a:hover::after {
+	width: 100%;
+}
+
+.navbar-right a:hover {
+	color: var(--accent-gold); /* Hover color for contrast */
+}

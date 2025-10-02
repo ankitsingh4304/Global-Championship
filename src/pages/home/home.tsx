@@ -1,5 +1,5 @@
-import React from "react";
-import banner from "../assets/homebg.png"; // full-page background
+import banner from "../../assets/homebg.png"; // full-page background
+import "./home.scss";
 
 const Home = () => {
   return (
