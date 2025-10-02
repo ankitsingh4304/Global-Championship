@@ -7,6 +7,7 @@ export interface TeamType {
 }
 
 export interface SportType {
+  sportId: string;
   title: string;
   webp: string;
   image: string;
@@ -35,10 +36,4 @@ export interface MatchType {
   winner: TeamId;
   points: number;
   bestPlayers?: BestPlayerType[];
-
-  // Added properties for the Popup component
-  bestBatsman?: string;
-  bestBowler?: string;
-  bestRunner?: string;
-  secondRunner?: string;
 }

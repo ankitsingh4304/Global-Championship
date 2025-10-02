@@ -7,9 +7,10 @@ import Navbar from './components/navbar/navbar';
 import Home from './pages/home/home';
 import Sports from "./pages/sports/sports";
 import OverallRank from "./pages/rank/rank";
-import BestPlayers from "./pages/bestplayer/bestplayer";
+import BestPlayers from "./pages/bestplayer/players";
 import Rulebook from "./pages/rulebook/rulebook";
 import Page404 from "./pages/page404/page404";
+import BestBySports from "./pages/bestplayer/sports";
 
 function App() {
   // const location = useLocation();
@@ -30,7 +31,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sports" element={<Sports />} />
         <Route path="/rank" element={<OverallRank />} />
-        <Route path="/players" element={<BestPlayers />} />
+        <Route path="/players" element={<BestBySports />} />
+        <Route path="/players/:sportId" element={<BestPlayers />} />
         <Route path="/rulebook" element={<Rulebook />} />
         <Route path="*" element={<Page404 />} />
       </Routes>

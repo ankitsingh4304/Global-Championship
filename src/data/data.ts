@@ -47,6 +47,7 @@ export const teams: TeamType[] = [
 // // // 2. Game data // // //
 export const games: SportsRecordType[] = [
   {
+    sportId: "cricket",
     title: "Cricket",
     webp: "/assets/sports/cricket/cricket_2.webp",
     image: "/assets/sports/cricket/cricket_2.jpg",
@@ -97,6 +98,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "basketball",
     title: "Basketball",
     webp: "/assets/sports/basketball/basketball_2.webp",
     image: "/assets/sports/basketball/basketball_2.jpg",
@@ -117,6 +119,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "table-tennis",
     title: "Table Tennis",
     webp: "/assets/sports/tabletennis/tabletennis_2.webp",
     image: "/assets/sports/tabletennis/tabletennis_2.jpg",
@@ -137,6 +140,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "badminton",
     title: "Badminton",
     webp: "/assets/sports/badminton/badminton_2.webp",
     image: "/assets/sports/badminton/badminton_2.jpg",
@@ -157,7 +161,8 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
-    title: "kabaddi",
+    sportId: "kabaddi",
+    title: "Kabaddi",
     webp: "/assets/sports/kabaddi/kabaddi_2.webp",
     image: "/assets/sports/kabaddi/kabaddi_2.jpg",
     description: "Join our kabaddi community with weekly matches.",
@@ -177,6 +182,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "kho-kho",
     title: "KHO KHO",
     webp: "/assets/sports/KHO KHO/KHO KHO_2.webp",
     image: "/assets/sports/KHO KHO/KHO KHO_2.jpg",
@@ -197,6 +203,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "chess",
     title: "CHESS",
     webp: "/assets/sports/CHESS/CHESS_2.webp",
     image: "/assets/sports/CHESS/CHESS_2.jpg",
@@ -217,6 +224,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "athletics",
     title: "ATHLETICS",
     webp: "/assets/sports/ATHLETICS/ATHLETICS_2.webp",
     image: "/assets/sports/ATHLETICS/ATHLETICS_2.jpg",
@@ -237,6 +245,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "tug-of-war",
     title: "TUG OF WAR",
     webp: "/assets/sports/TUG OF WAR/TUG OF WAR_2.webp",
     image: "/assets/sports/TUG OF WAR/TUG OF WAR_2.jpg",
@@ -257,6 +266,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "fitness-challenge",
     title: "FITNESS CHALLENGE",
     webp: "/assets/sports/FITNESS CHALLENGE/FITNESS CHALLENGE_2.webp",
     image: "/assets/sports/FITNESS CHALLENGE/FITNESS CHALLENGE_2.jpg",
@@ -277,6 +287,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "handball",
     title: "HANDBALL",
     webp: "/assets/sports/HANDBALL/HANDBALL_2.webp",
     image: "/assets/sports/HANDBALL/HANDBALL_2.jpg",
@@ -297,6 +308,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "yoga",
     title: "YOGA",
     webp: "/assets/sports/YOGA/YOGA_2.webp",
     image: "/assets/sports/YOGA/YOGA_2.jpg",
@@ -317,6 +329,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "football",
     title: "Football",
     webp: "/assets/sports/football/football_2.webp",
     image: "/assets/sports/football/football_2.jpg",
@@ -337,6 +350,7 @@ export const games: SportsRecordType[] = [
     ],
   },
   {
+    sportId: "volleyball",
     title: "VOLLEYBALL",
     webp: "/assets/sports/VOLLEYBALL/VOLLEYBALL_2.webp",
     image: "/assets/sports/VOLLEYBALL/VOLLEYBALL_2.jpg",
