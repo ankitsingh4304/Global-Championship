@@ -1,10 +1,10 @@
 //import './popUp.scss';
 
 interface PopupProps {
-    open: boolean;
-    className?: string;
-    onClose: () => void;
-    children?: React.ReactNode;
+  open: boolean;
+  className?: string;
+  onClose: () => void;
+  children?: React.ReactNode;
 }
 
 function PopUp({ open, onClose, children }: PopupProps) {
