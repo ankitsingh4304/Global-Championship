@@ -306,7 +306,7 @@ body,
   max-width: 1500px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
+  gap: 20px;
   justify-items: center;
   align-items: start;
   padding: 20px;
@@ -314,17 +314,7 @@ body,
   padding-left: 0 !important;
 }
 
-@keyframes floatAnimation {
 
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
 .sport-card {
   width: 100%;
@@ -339,13 +329,15 @@ body,
   text-align: center;
   overflow: hidden;
   position: relative;
-  animation: floatAnimation 3s ease-in-out infinite;
+  animation: PopupAnimation 1.5s  ease;
+  animation-duration: 1.5s;
 }
 
-
 .sport-card:hover {
-  /* animation: floatAnimation 3s ease-in-out infinite; */
-  box-shadow: 0px 2px 10px rgb(198, 173, 50);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 .popup-container {
   background-image: url('./assets/GCtable.png');
@@ -417,12 +409,15 @@ body,
 
 @media (max-width: 600px) {
   .sports-grid {
-      /* Change to 2 columns on phones */
       grid-template-columns: repeat(2, 1fr);
+      gap:15px
     }
-  
-    .sport-name {
-      font-size: 1rem;
+    .sport-card{
+      animation-name:PopupAnimation,popoutAnimation;
+      animation-duration:1.5s,3s;
+      animation-delay:0s,2s;
+      animation-timing-function:ease-in,ease-in-out;
+      animation-iteration-count:1,infinite;
     }
   .table-header-cell {
     font-size: 1rem !important;
@@ -443,5 +438,18 @@ body,
   .popup-container {
       background-size: contain;
     }
+  
+}
+
+@keyframes PopupAnimation {
+
+  0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes popoutAnimation {
+  0%,100% { transform: scale(0.97); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 1; }
   
 }
