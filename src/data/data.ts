@@ -9,7 +9,7 @@ export const teams: TeamType[] = [
   },
   {
     teamId: "team-2",
-    name: "Team B",
+    name: "Tffgfffffffffffffffffffffffffffffffffffdfd B",
     image: "/assets/sports/cricket/cricket_3.jpg",
   },
   {

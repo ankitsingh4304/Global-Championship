@@ -5,7 +5,7 @@
 // import { games } from "../../data/data";
 // import type { SportsRecordType } from "../../data/schema";
 import { useLocation } from "react-router-dom";
-import "./players.scss"
+//import "./players.scss"
 import type { Sport, MatchType } from "./utils/bestPlayer";
 import Table from "../../components/table/table";
 import { useState } from "react";
@@ -17,18 +17,18 @@ export default function BestPlayers() {
   const [selectedMatch, setSelectedMatch] = useState<MatchType | null>(null)
 
   return (
-    <article id="rank" className="adjust-top p-8 max-w-7xl mx-auto">
+    <article className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6] adjust-top p-3 mx-auto">
       <div className="stats">
-        <h2 className="text-3xl font-bold mb-6 text-center text-black-700">
+        <h2 className="text-3xl font-bold mb-4 text-center text-black mt-5 tracking-wider">
           {game.title}
         </h2>
-        <div className="table-container overflow-x-auto bg-white shadow-2xl border border-gray-100">
+       
           <Table
             columns={["Date", "Teams", "Winner"]}
             rows={game.matches.map((match) => [match.date, `${match.team1}${match.team2.length > 0 ? ' vs ' + match.team2 : ''}`, match.winner])}
             onRowClick={(index) => setSelectedMatch(game.matches[index])}
           />
-        </div>
+       
         {selectedMatch && (
           <BestPlayerPopup match={selectedMatch} onClose={() => setSelectedMatch(null)} />
         )}

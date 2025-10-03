@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+
+  --animate-scalePulse: scalePulse 2s ease-in-out infinite;
+  @keyframes scalePulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.025); /* slightly bigger */
+    }
+  }
+
+ 
+  --animate-popOpen: popOpen 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  @keyframes popOpen {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+

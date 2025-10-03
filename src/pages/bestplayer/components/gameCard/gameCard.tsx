@@ -2,7 +2,6 @@
 
 import React from "react";
 import type { Sport } from "../../utils/bestPlayer";
-import "./gameCard.scss";
 
 interface GameCardProps {
   game: Sport;
@@ -16,23 +15,26 @@ const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
 
   return (
     <div
-      id="game-card"
+      className="relative bg-white
+                        rounded-3xl shadow-lg shadow-teal-950/70 lg:animate-none
+                        lg:hover:scale-105 transition-transform duration-500 overflow-hidden animate-scalePulse"
       onClick={() => onClick(game)}
     >
-      <picture
-        className="shadow-lg shadow-teal-950/70 overflow-hidden">
+      <picture>
         <source srcSet={webp} type="image/webp" />
         <source srcSet={jpg} type="image/jpeg" />
-        <img src={jpg} alt={title} className="w-full h-48 object-cover " />
+        <img src={jpg} alt={title} className="w-full h-50 object-cover" />
         <img
           src={jpg}
           alt={title}
-          className="absolute bottom-0 left-0 w-full h-10 object-contain blur"
+          className="absolute bottom-0 left-0 w-full h-10 blur"
         />
       </picture>
-      <h3>
-        {title}
-      </h3>
+      <div className="bottom-0 left-5 absolute">
+        <h2 className="font-brave81 text-xl font-semibold text-white mb-2 tracking-widest">
+          {title}
+        </h2>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 // src/pages/RankTable.tsx
 import { useState } from "react";
-import './rank.scss'
+//import './rank.scss'
 
 // Import the necessary interface
 import type { TeamRankedType } from "./utils/calculateRanking";
@@ -24,23 +24,23 @@ export default function OverallRank() {
   }
 
   return (
-    <article id="rank" className="adjust-top p-8 max-w-7xl mx-auto">
+    <div className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6] adjust-top p-3 mx-auto">
       <div className="stats">
-        <h2 className="text-3xl font-bold mb-6 text-center text-black-700">
+        <h2 className="text-3xl font-bold mb-6 text-center text-black mt-5 tracking-wider">
           Team Standings
         </h2>
-        <div className="table-container overflow-x-auto bg-white shadow-2xl border border-gray-100">
+       {/** <div className="table-container overflow-x-auto bg-white shadow-2xl border border-gray-100"> */}
           <Table
             columns={["Rank", "Teams", "Points"]}
             rows={rankings.map((team) => [team.rank.toString(), team.teamName, team.overallPoints.toString()])}
             onRowClick={(index) => handleRowClick(rankings[index])}
           />
-        </div>
+        {/**</div>*/}
         {/*Render popup conditionally*/}
         {selectedTeam && (
           <RankDetailPopup team={selectedTeam} onClose={handleClosePopup} />
         )}
       </div>
-    </article>
+    </div>
   );
 };

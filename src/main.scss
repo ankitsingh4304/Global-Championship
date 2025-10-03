@@ -1,4 +1,5 @@
-@use "tailwindcss";
+//@use "tailwindcss";
+//@import "tailwind";
 
 body {
 	margin: 0;
@@ -14,9 +15,8 @@ code {
 		monospace;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+// @tailwind utilities;
 
 @font-face {
 	font-family: "VerminVibes";

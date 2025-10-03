@@ -1,6 +1,6 @@
 import PopUp from "../../../../components/popUp/popUp";
 import { type MatchType } from "../../utils/bestPlayer";
-import './bestPlayerPopup.scss';
+//import './bestPlayerPopup.scss';
 
 interface PopupProps {
   match: MatchType;
@@ -11,7 +11,7 @@ export default function BestPlayerPopup({ match, onClose }: PopupProps) {
   return (
     <PopUp
       open={!!match}
-      className="best-player-popup"
+      className="best-player-popup "
       onClose={onClose}
     >
       <div
