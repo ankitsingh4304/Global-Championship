@@ -61,12 +61,12 @@ export const games: SportsRecordType[] = [
         bestPlayers: [
           {
             name: "Player 1",
-            title: "Best Captain",
+            title: "Best Captaingfgfg ",
             image: "/assets/sports/cricket/player1.jpg",
           },
           {
             name: "Player 2",
-            title: "Best Vice-Captain",
+            title: "Best Vice-Captain d",
             image: "/assets/sports/cricket/player2.jpg",
           },
           {
@@ -109,6 +109,18 @@ export const games: SportsRecordType[] = [
         team1Id: "team-1",
         winner: "team-1",
         points: 8,
+        bestPlayers: [
+          {
+            name: "Player 1",
+            title: "Best Captaingfgfg fgcfgfdfgdf ",
+            image: "/assets/sports/cricket/player1.jpg",
+          },
+          {
+            name: "Player 2",
+            title: "Best Vice-Captain d",
+            image: "/assets/sports/cricket/player2.jpg",
+          },
+        ],
       },
       {
         date: "2025-09-27",
