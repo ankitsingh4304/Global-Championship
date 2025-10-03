@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.scss'
+import './App.css'
 
 import Navbar from './components/navbar/navbar';
 
 // Pages
 import Home from './pages/home/home';
-import Sports from "./pages/sports/sports";
+import Sports from "./pages/sports/sports.jsx";
 import OverallRank from "./pages/rank/rank";
 import BestPlayers from "./pages/bestplayer/players";
 import Rulebook from "./pages/rulebook/rulebook";

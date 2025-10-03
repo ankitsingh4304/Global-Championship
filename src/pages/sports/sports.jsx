@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import SportsSection from "../components/SportsSection";
-import TableComponent from "../components/table";
-import '../App.css';
+import SportsSection from "../../components/SportsSection";
+import TableComponent from "../../components/table";
+import '../../App.css';
 import { Dialog, DialogTitle, DialogContent, Divider, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
-export default function App() {
+export default function Sports() {
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [selectedSportData, setSelectedSportData] = useState(null);
   const [selectedSportName, setSelectedSportName] = useState("");
@@ -12,7 +12,7 @@ export default function App() {
   // --- Click Handlers ---
   const handleSportClick = async (sport) => {
     try {
-      const module = await import(`../data/${sport.id}.js`);
+      const module = await import(`../../data/${sport.id}.js`);
       setSelectedSportData(module.default);
       setSelectedSportName(sport.name);
       setPopupOpen(true);
@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div className="sports-container">
-      <h1 style={{ textAlign: "center",fontFamily: 'Inter, sans-serif',fontSize: '3rem', fontWeight: '700', color: '#3A1616' }}>
+      <h1 style={{ textAlign: "center", fontFamily: 'Inter, sans-serif', fontSize: '3rem', fontWeight: '700', color: '#3A1616' }}>
         SPORTS
       </h1>
       <SportsSection handleSportClick={handleSportClick} />
@@ -71,7 +71,7 @@ export default function App() {
           <DialogContent >
             {<TableComponent teams={selectedSportData} />}
           </DialogContent>
-         
+
         </div>
       </Dialog>
     </div>
