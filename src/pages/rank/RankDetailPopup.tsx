@@ -71,7 +71,7 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
           ))}
         </ul>
 
-        {/* Footer or extra button (optional) */}
+        {/* Footer or extra button (optional) 
         <div className="mt-6 flex justify-end">
           <button
             onClick={onClose}
@@ -80,6 +80,7 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
             Close
           </button>
         </div>
+        */}
       </div>
     </div>
   );
