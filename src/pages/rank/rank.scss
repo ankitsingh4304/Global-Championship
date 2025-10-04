@@ -1,14 +1,11 @@
-body,
-#root {
-	background-color: #e5e8eb !important;
-}
-
 article#rank {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	background-color: #f2f4e0;
 	div.stats {
 		width: 80%;
 		height: 80%;

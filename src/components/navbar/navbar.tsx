@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/gclogo.png";
 import "./navbar.scss";
 import PopUp from "../popUp/popUp";
 import { useState } from "react";
@@ -11,7 +10,7 @@ export default function Navbar() {
 		<nav id='navbar'>
 			<div className='navbar-left'>
 				<NavLink to='/' className='navbar-logo-link'>
-					<img src={logo} alt='GC Logo' />
+					<img src="/assets/gclogo.png" alt='GC Logo' />
 					<div>
 						<h1>SHAURYA</h1>
 						<span>The Sports Committee</span>

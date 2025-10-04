@@ -17,7 +17,7 @@ export default function BestPlayers() {
   const [selectedMatch, setSelectedMatch] = useState<MatchType | null>(null)
 
   return (
-    <article id="rank" className="adjust-top p-8 max-w-7xl mx-auto">
+    <article id="rank" className="adjust-top">
       <div className="stats">
         <h2 className="text-3xl font-bold mb-6 text-center text-black-700">
           {game.title}
