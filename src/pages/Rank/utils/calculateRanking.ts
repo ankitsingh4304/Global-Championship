@@ -1,5 +1,4 @@
-import { teams, games } from "../../data/data";
-import { SportsRecordType, TeamType } from "../../data/schema";
+import { teams, games } from "../../../data/data";
 
 // For the overall rank table
 export interface TeamRankedType {
@@ -12,7 +11,7 @@ export interface TeamRankedType {
   }[];
 }
 
-export function calculateRankings(teamsData: TeamType[], gameData: SportsRecordType[]): TeamRankedType[] {
+export function calculateRankings(): TeamRankedType[] {
   const ranking: TeamRankedType[] = [];
 
   // Calculate the overall points for each team
