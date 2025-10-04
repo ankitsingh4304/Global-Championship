@@ -79,3 +79,13 @@
 	gap: 30px;
 	flex-wrap: wrap;
 }
+
+// Extra small devices (phones)
+@media (width <= 600px) {
+	.home-container .home-content {
+		padding: 10px 10%;
+		.homepage-title {
+			font-size: 3rem;
+		}
+	}
+}
