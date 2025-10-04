@@ -1,4 +1,3 @@
-import React from "react";
 import { type MatchType } from "../../utils/bestPlayer";
 
 interface BestPlayerPopupProps {
