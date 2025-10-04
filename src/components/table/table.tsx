@@ -15,7 +15,7 @@ export default function Table({ columns, rows, onRowClick }: TableProps) {
             {columns.map((column, index) => (
               <th
                 key={column + index}
-                className="px-6 py-4 text-center text-lg font-bold tracking-wide text-white uppercase border-b-4 border-white"
+                className="px-6 py-4 text-center text-lg font-bold tracking-wide text-white uppercase border-b-3 border-white"
               >
                 {column}
               </th>
