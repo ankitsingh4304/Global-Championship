@@ -10,6 +10,7 @@ export default function Sports() {
   const [selectedSportName, setSelectedSportName] = useState("");
 
   // --- Click Handlers ---
+  
   const handleSportClick = async (sport) => {
     try {
       const module = await import(`../../data/${sport.id}.js`);

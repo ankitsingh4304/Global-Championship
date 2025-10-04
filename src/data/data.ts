@@ -4,7 +4,7 @@ import type { TeamType, SportsRecordType } from "./schema";
 export const teams: TeamType[] = [
   {
     teamId: "team-1",
-    name: "Team A",
+    name: "Arch & MCA",
     image: "/assets/sports/cricket/cricket_2.jpg",
   },
   {

@@ -26,7 +26,7 @@ export default function OverallRank() {
   return (
     <div className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6] adjust-top p-3 mx-auto">
       <div className="stats">
-        <h2 className="text-3xl font-bold mb-6 text-center text-black mt-5 tracking-wider">
+        <h2 className="text-3xl font-bold mb-6 text-center font-[Brave81] text-black mt-5 tracking-widest">
           Team Standings
         </h2>
        {/** <div className="table-container overflow-x-auto bg-white shadow-2xl border border-gray-100"> */}
