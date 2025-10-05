@@ -283,33 +283,8 @@ body,
   }
     
 }
-
-.sports-grid {
-  width: 100%;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: start;
-  padding-top: 0px;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-
-
-.sport-card {
-  cursor: pointer;
-  animation: PopupAnimation 1.5s  ease;
-  animation-duration: 1.5s;
-}
-
-.sport-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  
+.sport-card{
+  animation: PopupAnimation 1.5s ease-in-out;
 }
 .popup-container {
   background-image: url('./assets/GCtable.png');
@@ -380,17 +355,6 @@ body,
 }
 
 @media (max-width: 600px) {
-  .sports-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap:15px
-    }
-    .sport-card{
-      animation-name:PopupAnimation,popoutAnimation;
-      animation-duration:1.5s,3s;
-      animation-delay:0s,2s;
-      animation-timing-function:ease-in,ease-in-out;
-      animation-iteration-count:1,infinite;
-    }
   .table-header-cell {
     font-size: 1rem !important;
   }
@@ -417,7 +381,7 @@ body,
 
   0% { transform: scale(0.8); opacity: 0; }
     50% { transform: scale(1.02); opacity: 1; }
-    100% { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1.0); opacity: 1; }
 }
 
 @keyframes popoutAnimation {
