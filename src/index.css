@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-
   --animate-scalePulse: scalePulse 2s ease-in-out infinite;
   @keyframes scalePulse {
-    0%, 100% {
+    0%,
+    100% {
       transform: scale(1);
     }
     50% {
@@ -12,7 +12,6 @@
     }
   }
 
- 
   --animate-popOpen: popOpen 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
   @keyframes popOpen {
     0% {
@@ -24,6 +23,8 @@
       opacity: 1;
     }
   }
+
+  --blur-2xs: 2.5px;
 }
 
 @font-face {
@@ -35,7 +36,6 @@
   font-family: crossFly;
   src: url("/assets/fonts/crossFly.otf");
 }
-
 
 @font-face {
   font-family: fastLines;
@@ -66,5 +66,3 @@
   font-family: vermin;
   src: url("/assets/fonts/vermin.ttf");
 }
-
-
