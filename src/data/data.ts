@@ -101,7 +101,7 @@ export const games: SportsRecordType[] = [
     sportId: "basketball",
     title: "Basketball",
     webp: "/assets/sports/basketball/basketball_2.webp",
-    image: "/assets/sports/basketball/basketball_2.jpg",
+    image: "/assets/sports/basketball/basketboll_orig.jpeg",
     description: "Singles and doubles tournaments for all skill levels.",
     matches: [
       {
