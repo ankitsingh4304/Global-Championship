@@ -39,15 +39,9 @@ export default function Sports() {
 	};
 
 	return (
-		<div className='sports-container'>
+		<div className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6] adjust-top p-3 mx-auto">
 			<h1
-				style={{
-					textAlign: "center",
-					fontFamily: "Inter, sans-serif",
-					fontSize: "3rem",
-					fontWeight: "700",
-					color: "#3A1616",
-				}}>
+				className="text-5xl font-bold mb-6 text-center font-[Brave81] text-black mt-5 tracking-widest">
 				SPORTS
 			</h1>
 			<SportsSection handleSportClick={handleSportClick} />
@@ -79,7 +73,7 @@ export default function Sports() {
 					<CloseIcon />
 				</IconButton>
 				<div className='popup-container'>
-					<DialogTitle>{selectedSportName} Table</DialogTitle>
+					<DialogTitle><h1 className=" font-[Brave81]">{selectedSportName} Table</h1></DialogTitle>
 					<Divider
 						sx={{
 							borderColor: "#946F2C",
