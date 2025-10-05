@@ -18,21 +18,35 @@ export default function BestPlayers() {
 
   return (
     <article className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6] adjust-top p-3 mx-auto">
-      <div className="stats">
-        <h2 className="text-3xl font-bold mb-4 text-center text-black mt-5 tracking-wider">
-          {game.title}
-        </h2>
-       
-          <Table
-            columns={["Date", "Teams", "Winner"]}
-            rows={game.matches.map((match) => [match.date, `${match.team1}${match.team2.length > 0 ? ' vs ' + match.team2 : ''}`, match.winner])}
-            onRowClick={(index) => setSelectedMatch(game.matches[index])}
-          />
-       
-        {selectedMatch && (
-          <BestPlayerPopup match={selectedMatch} onClose={() => setSelectedMatch(null)} />
-        )}
-      </div>
+
+      {/*Dynamic Background Image*/}
+      {
+        game.image && (
+          <div
+            className="absolute inset-0 bg-cover bg-center z-0 blur-sm opacity-90"
+            style={{backgroundImage:`url(${game.image})`}}
+          ></div>
+        )
+      }
+
+      {/*Overlay*/}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-0"/>
+
+        <div className="relative z-10">
+          <h2 className="font-[Brave81] text-3xl font-bold mb-4 text-center text-black mt-5 tracking-widest">
+            {game.title}
+          </h2>
+        
+            <Table
+              columns={["Date", "Teams", "Winner"]}
+              rows={game.matches.map((match) => [match.date, `${match.team1}${match.team2.length > 0 ? ' vs ' + match.team2 : ''}`, match.winner])}
+              onRowClick={(index) => setSelectedMatch(game.matches[index])}
+            />
+        
+          {selectedMatch && (
+            <BestPlayerPopup match={selectedMatch} onClose={() => setSelectedMatch(null)} />
+          )}
+        </div>
     </article>
   );
 };

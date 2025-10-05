@@ -26,4 +26,45 @@
   }
 }
 
+@font-face {
+  font-family: Brave81;
+  src: url("/assets/fonts/Brave81.ttf");
+}
+
+@font-face {
+  font-family: crossFly;
+  src: url("/assets/fonts/crossFly.otf");
+}
+
+
+@font-face {
+  font-family: fastLines;
+  src: url("/assets/fonts/fastLines.otf");
+}
+
+@font-face {
+  font-family: kingWarrior;
+  src: url("/assets/fonts/kingWarrior.otf");
+}
+
+@font-face {
+  font-family: novega;
+  src: url("/assets/fonts/novega.ttf");
+}
+
+@font-face {
+  font-family: speedPixel;
+  src: url("/assets/fonts/speedPixel.ttf");
+}
+
+@font-face {
+  font-family: speedPixelItalic;
+  src: url("/assets/fonts/speedPixelItalic.ttf");
+}
+
+@font-face {
+  font-family: vermin;
+  src: url("/assets/fonts/vermin.ttf");
+}
+
 

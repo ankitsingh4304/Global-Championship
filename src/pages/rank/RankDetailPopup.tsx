@@ -21,12 +21,12 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
         className="relative 
         md:max-w-xl     /* Tablet/Desktop: Increases max width to 'xl' */
         lg:max-w-2xl    /* Large Desktop: Sets max width to '2xl' */
-       mb-10 bg-gradient-to-br from-white to-teal-50 p-6 rounded-2xl shadow-2xl w-full max-w-lg mx-1 transform scale-95 animate-popOpen hover:scale-100 transition-transform duration-300 ease-out mt-40"
+       mb-10 bg-gradient-to-br from-white to-[#f4f1f0] p-6 rounded-2xl shadow-2xl w-full max-w-lg mx-1 transform scale-95 animate-popOpen hover:scale-100 transition-transform duration-300 ease-out mt-40"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
       >
         {/* Header */}
-        <div className="flex justify-between items-center mb-5 border-b-2 border-teal-100 pb-3">
-          <h3 className="text-3xl font-extrabold text-teal-700 tracking-wide break-words whitespace-normal max-w-[290px]">
+        <div className="flex justify-between items-center mb-5 border-b-2 border-[#562909] pb-3">
+          <h3 className="font-[Brave81] text-3xl font-extrabold text-[#562909] tracking-wider break-words whitespace-normal max-w-[290px]">
             {team.teamName} Details
           </h3>
 
@@ -40,18 +40,18 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
         </div>
 
         {/* Overall Stats */}
-        <p className="text-lg mb-5 text-gray-800 font-medium">
-          <span className="font-bold text-teal-600">
+        <p className="text-xl mb-5 text-gray-800 font-medium">
+          <span className="font-bold text-[#8a420e]">
             Overall Rank: #{team.rank}
           </span>{" "}
           |
-          <span className="ml-2 font-bold text-teal-600">
+          <span className="ml-2 font-bold text-xl text-[#8a420e]">
             Total Points: {team.overallPoints}
           </span>
         </p>
 
         {/* Points by Sport */}
-        <h4 className="text-xl font-semibold mb-4 text-gray-700 tracking-wide">
+        <h4 className="text-xl font-semibold mb-4 text-[#352318] tracking-wide">
           Points Acquired by Sport:
         </h4>
 
@@ -59,19 +59,19 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
           {team.distributedPoints.map((sport, index) => (
             <li
               key={index}
-              className="flex justify-between items-center p-3 rounded-xl bg-gradient-to-r from-teal-50 to-white border border-teal-100 shadow-sm hover:shadow-lg transition-shadow duration-300"
+              className="flex justify-between items-center p-3 rounded-xl bg-gradient-to-r from-[#f7ece4] to-white border border-[#8a420e] shadow-sm hover:shadow-lg transition-shadow duration-300"
             >
-              <span className="font-medium text-gray-800">
+              <span className="font-medium text-xl text-gray-800">
                 {sport.sportName}
               </span>
-              <span className="font-bold text-lg text-teal-700">
+              <span className="font-bold text-xl text-[#562909]">
                 {sport.points} pts
               </span>
             </li>
           ))}
         </ul>
 
-        {/* Footer or extra button (optional) */}
+        {/* Footer or extra button (optional) 
         <div className="mt-6 flex justify-end">
           <button
             onClick={onClose}
@@ -80,6 +80,7 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
             Close
           </button>
         </div>
+        */}
       </div>
     </div>
   );

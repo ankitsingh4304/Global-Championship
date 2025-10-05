@@ -2,11 +2,10 @@ import banner from "../../assets/homebg.png";
 import "./home.scss";
 
 const Home = () => {
-  // Function to handle PDF downloads
   const handleDownloadPDF = (pdfType: 'rulebook' | 'championship') => {
     const pdfUrls = {
       rulebook: '/pdfs/rulebook.pdf',
-      championship: ''
+      championship: '/assets/pdfs/general-championship.pdf'
     };
     
     const link = document.createElement('a');
@@ -41,13 +40,6 @@ const Home = () => {
           {/* PDF Download Buttons */}
           <div className="pdf-buttons-container">
             <button 
-              className="pdf-download-btn"
-              onClick={() => handleDownloadPDF('rulebook')}
-            >
-              <span className="btn-icon">📖</span>
-              Download Rulebook
-            </button>
-            <button 
               className="pdf-download-btn championship-btn"
               onClick={() => handleDownloadPDF('championship')}
             >
@@ -56,24 +48,32 @@ const Home = () => {
             </button>
           </div>
         </div>
-
-        {/* Events Section */}
+        
         <h2 className="events-title">Upcoming Events</h2>
         <div className="event-buttons-container">
-          <div className="event-card">
-            <div className="card-icon">⚽</div>
-            <h3>Football Championship</h3>
-            <p>Join the ultimate football showdown</p>
+          <div className="event-card" style={{ backgroundImage: 'url(/assets/sports/football/Football.svg)' }}>
+            <div className="card-overlay"></div>
+            <div className="card-content">
+              <div className="card-icon">⚽</div>
+              <h3>Football Championship</h3>
+              <p>Join the ultimate football showdown</p>
+            </div>
           </div>
-          <div className="event-card">
-            <div className="card-icon">🏀</div>
-            <h3>Basketball League</h3>
-            <p>Experience high-flying action</p>
+          <div className="event-card" style={{ backgroundImage: 'url(/assets/sports/basketball/Basketball.svg)' }}>
+            <div className="card-overlay"></div>
+            <div className="card-content">
+              <div className="card-icon">🏀</div>
+              <h3>Basketball League</h3>
+              <p>Experience high-flying action</p>
+            </div>
           </div>
-          <div className="event-card">
-            <div className="card-icon">🏏</div>
-            <h3>Cricket Tournament</h3>
-            <p>Witness legendary matches</p>
+          <div className="event-card" style={{ backgroundImage: 'url(/assets/sports/volleyball/Volleyball.svg)' }}>
+            <div className="card-overlay"></div>
+            <div className="card-content">
+              <div className="card-icon">🏐</div>
+              <h3>Cricket Tournament</h3>
+              <p>Witness legendary matches</p>
+            </div>
           </div>
         </div>
       </div>

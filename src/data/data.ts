@@ -4,7 +4,7 @@ import type { TeamType, SportsRecordType } from "./schema";
 export const teams: TeamType[] = [
   {
     teamId: "team-1",
-    name: "Team A",
+    name: "Arch & MCA",
     image: "/assets/sports/cricket/cricket_2.jpg",
   },
   {
@@ -61,12 +61,12 @@ export const games: SportsRecordType[] = [
         bestPlayers: [
           {
             name: "Player 1",
-            title: "Best Captain",
+            title: "Best Captaingfgfg ",
             image: "/assets/sports/cricket/player1.jpg",
           },
           {
             name: "Player 2",
-            title: "Best Vice-Captain",
+            title: "Best Vice-Captain d",
             image: "/assets/sports/cricket/player2.jpg",
           },
           {
@@ -109,6 +109,18 @@ export const games: SportsRecordType[] = [
         team1Id: "team-1",
         winner: "team-1",
         points: 8,
+        bestPlayers: [
+          {
+            name: "Player 1",
+            title: "Best Captaingfgfg fgcfgfdfgdf ",
+            image: "/assets/sports/cricket/player1.jpg",
+          },
+          {
+            name: "Player 2",
+            title: "Best Vice-Captain d",
+            image: "/assets/sports/cricket/player2.jpg",
+          },
+        ],
       },
       {
         date: "2025-09-27",
@@ -163,8 +175,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "kabaddi",
     title: "Kabaddi",
-    webp: "/assets/sports/kabaddi/kabaddi_2.webp",
-    image: "/assets/sports/kabaddi/kabaddi_2.jpg",
+    webp: "/assets/sports/Kabaddi/Kabaddi.webp",
+    image: "/assets/sports/kabaddi/kabaddi.jpg",
     description: "Join our kabaddi community with weekly matches.",
     matches: [
       {
@@ -184,8 +196,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "kho-kho",
     title: "KHO KHO",
-    webp: "/assets/sports/KHO KHO/KHO KHO_2.webp",
-    image: "/assets/sports/KHO KHO/KHO KHO_2.jpg",
+    webp: "/assets/sports/Kho Kho/kho kho.webp",
+    image: "/assets/sports/Kho Kho/kho kho.jpg",
     description: "Join our KHO KHO community with weekly matches.",
     matches: [
       {
@@ -205,8 +217,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "chess",
     title: "CHESS",
-    webp: "/assets/sports/CHESS/CHESS_2.webp",
-    image: "/assets/sports/CHESS/CHESS_2.jpg",
+    webp: "/assets/sports/Chess/Chess.webp",
+    image: "/assets/sports/Chess/Chess.jpg",
     description: "Join our CHESS community with weekly matches.",
     matches: [
       {
@@ -226,8 +238,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "athletics",
     title: "ATHLETICS",
-    webp: "/assets/sports/ATHLETICS/ATHLETICS_2.webp",
-    image: "/assets/sports/ATHLETICS/ATHLETICS_2.jpg",
+    webp: "/assets/sports/Athletics/Athletics.webp",
+    image: "/assets/sports/Athletics/Athletics.jpg",
     description: "Join our ATHLETICS community with weekly matches.",
     matches: [
       {
@@ -247,8 +259,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "tug-of-war",
     title: "TUG OF WAR",
-    webp: "/assets/sports/TUG OF WAR/TUG OF WAR_2.webp",
-    image: "/assets/sports/TUG OF WAR/TUG OF WAR_2.jpg",
+    webp: "/assets/sports/Tug of war/Tug of war.webp",
+    image: "/assets/sports/Tug of war/Tug of war.jpg",
     description: "Join our TUG OF WAR community with weekly matches.",
     matches: [
       {
@@ -268,8 +280,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "fitness-challenge",
     title: "FITNESS CHALLENGE",
-    webp: "/assets/sports/FITNESS CHALLENGE/FITNESS CHALLENGE_2.webp",
-    image: "/assets/sports/FITNESS CHALLENGE/FITNESS CHALLENGE_2.jpg",
+    webp: "/assets/sports/Fitness Challenge/Fitness challenge.webp",
+    image: "/assets/sports/Fitness Challenge/Fitness challenge.jpg",
     description: "Join our FITNESS CHALLENGE community with weekly matches.",
     matches: [
       {
@@ -289,8 +301,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "handball",
     title: "HANDBALL",
-    webp: "/assets/sports/HANDBALL/HANDBALL_2.webp",
-    image: "/assets/sports/HANDBALL/HANDBALL_2.jpg",
+    webp: "/assets/sports/handball/Handball.webp",
+    image: "/assets/sports/handball/Handball.jpg",
     description: "Join our HANDBALL community with weekly matches.",
     matches: [
       {
@@ -310,8 +322,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "yoga",
     title: "YOGA",
-    webp: "/assets/sports/YOGA/YOGA_2.webp",
-    image: "/assets/sports/YOGA/YOGA_2.jpg",
+    webp: "/assets/sports/Yoga/Yoga.webp",
+    image: "/assets/sports/Yoga/Yoga.jpg",
     description: "Join our YOGA community with weekly matches.",
     matches: [
       {
@@ -352,8 +364,8 @@ export const games: SportsRecordType[] = [
   {
     sportId: "volleyball",
     title: "VOLLEYBALL",
-    webp: "/assets/sports/VOLLEYBALL/VOLLEYBALL_2.webp",
-    image: "/assets/sports/VOLLEYBALL/VOLLEYBALL_2.jpg",
+    webp: "/assets/sports/volleyball/Volleyball.webp",
+    image: "/assets/sports/volleyball/Volleyball.jpg",
     description: "Join our volleyball community with weekly matches.",
     matches: [
       {
