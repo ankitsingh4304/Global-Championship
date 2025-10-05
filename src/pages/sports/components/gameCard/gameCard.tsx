@@ -14,7 +14,8 @@ const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
   const jpg = image;
 
   return (
-    <div className="sport-card relative bg-white rounded-3xl shadow-lg shadow-teal-950/70 overflow-hidden">
+    <div className="sport-card relative bg-white rounded-3xl shadow-lg shadow-teal-950/70 overflow-hidden"
+    onClick={() => onClick(game)}>
   {/* Image Layer (Animated) */}
   <div className="relative w-full h-50 overflow-hidden animate-scalePulse lg:animate-none lg:hover:scale-105">
     <picture>

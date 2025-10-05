@@ -284,7 +284,14 @@ body,
     
 }
 .sport-card{
+  cursor: pointer;
+  transition: transform 0.3s ease;
   animation: PopupAnimation 1.5s ease-in-out;
+}
+.sport-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .popup-container {
   background-image: url('./assets/GCtable.png');
