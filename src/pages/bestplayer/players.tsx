@@ -23,7 +23,7 @@ export default function BestPlayers() {
       {
         game.image && (
           <div
-            className="absolute inset-0 bg-cover bg-center z-0 blur-sm opacity-90"
+            className="absolute inset-0 bg-cover bg-center z-0 blur-2xs opacity-90"
             style={{backgroundImage:`url(${game.image})`}}
           ></div>
         )

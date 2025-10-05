@@ -19,12 +19,18 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
       {/* Modal Content */}
       <div
         className="relative 
+        bg-[url('/assets/tableImage/GCtable.png')]
+        bg-cover bg-center bg-no-repeat
         md:max-w-xl     /* Tablet/Desktop: Increases max width to 'xl' */
         lg:max-w-2xl    /* Large Desktop: Sets max width to '2xl' */
        mb-10 bg-gradient-to-br from-white to-[#f4f1f0] p-6 rounded-2xl shadow-2xl w-full max-w-lg mx-1 transform scale-95 animate-popOpen hover:scale-100 transition-transform duration-300 ease-out mt-40"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
       >
+        {/* 🔹 Blurred Background Image Layer */}
+        <div className="absolute inset-0 bg-[url('/assets/tableImage/GCtable.png')] bg-cover bg-center filter blur-xs"></div>
+
         {/* Header */}
+        <div className="relative z-10">
         <div className="flex justify-between items-center mb-5 border-b-2 border-[#562909] pb-3">
           <h3 className="font-[Brave81] text-3xl font-extrabold text-[#562909] tracking-wider break-words whitespace-normal max-w-[290px]">
             {team.teamName} Details
@@ -82,6 +88,7 @@ const RankDetailPopup: React.FC<RankDetailPopupProps> = ({ team, onClose }) => {
         </div>
         */}
       </div>
+        </div>
     </div>
   );
 };
