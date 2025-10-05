@@ -14,28 +14,32 @@ const GameCard: React.FC<GameCardProps> = ({ game, onClick }) => {
   const jpg = image;
 
   return (
-    <div
-      className="sport-card relative bg-white
-                        rounded-3xl shadow-lg shadow-teal-950/70 lg:animate-none
-                        lg:hover:scale-105 transition-transform duration-500 overflow-hidden animate-scalePulse"
-      onClick={() => onClick(game)}
+    <div className="sport-card relative bg-white rounded-3xl shadow-lg shadow-teal-950/70 overflow-hidden">
+  {/* Image Layer (Animated) */}
+  <div className="relative w-full h-50 overflow-hidden animate-scalePulse lg:animate-none lg:hover:scale-105">
+    <picture>
+      <source srcSet={webp} type="image/webp" />
+      <source srcSet={jpg} type="image/jpeg" />
+      <img src={jpg} alt={title} className="w-full h-full object-cover" />
+      <img
+        src={jpg}
+        alt={title}
+        className="absolute bottom-0 left-0 w-full h-10 blur"
+      />
+    </picture>
+  </div>
+
+  {/* Text Layer (Stable, not scaled) */}
+  <div className="absolute bottom-0 left-5 z-10">
+    <h2
+      className="font-brave81 text-xl font-semibold text-white mb-2 tracking-widest"
+      style={{ transform: "translateZ(0)", willChange: "transform" }}
     >
-      <picture>
-        <source srcSet={webp} type="image/webp" />
-        <source srcSet={jpg} type="image/jpeg" />
-        <img src={jpg} alt={title} className="w-full h-50 object-cover" />
-        <img
-          src={jpg}
-          alt={title}
-          className="absolute bottom-0 left-0 w-full h-10 blur"
-        />
-      </picture>
-      <div className="bottom-0 left-5 absolute">
-        <h2 className="font-brave81 text-xl font-semibold text-white mb-2 tracking-widest">
-          {title}
-        </h2>
-      </div>
-    </div>
+      {title}
+    </h2>
+  </div>
+</div>
+
   );
 };
 
