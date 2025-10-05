@@ -41,9 +41,9 @@ export default function Sports() {
 	return (
 		<section className="adjust-top">
 			{/** Background */}
-			<div className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#c7eae6]">
+			<div className="relative min-h-screen bg-gradient-to-tr from-[#fcf0fd] to-[#f6ede3]">
 				<div className="content">
-					<h2 className="text-amber-950 text-center text-5xl pt-4 pl-8 pb-2 font-bold font-[Brave81] tracking-wide">SPORTS</h2>
+					<h2 className="text-amber-950 text-center text-4xl pt-4 pl-8 pb-2 font-bold font-[Brave81] tracking-wide">SPORTS</h2>
 
 					{/**Card Component Traversing */}
 					<SportsSection handleSportClick={handleSportClick} />

@@ -35,7 +35,7 @@ export default function OverallRank() {
 
 
       <div className="stats">
-        <h2 className="text-3xl font-bold mb-6 text-center font-[Brave81] text-black mt-5 tracking-widest">
+        <h2 className="text-3xl font-bold mb-6 text-center font-[Brave81] text-amber-950 mt-5 tracking-widest">
           Team Standings
         </h2>
        {/** <div className="table-container overflow-x-auto bg-white shadow-2xl border border-gray-100"> */}
