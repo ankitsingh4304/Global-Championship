@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SportsSection from "./components/SportsSection";
-import TableComponent from "../../components/table";
+import TableComponent from "./components/table";
 import "../../App.css";
 import {
 	Dialog,
@@ -84,7 +84,7 @@ export default function Sports() {
 								}}
 							/>
 
-							<DialogContent>
+							<DialogContent >
 								{<TableComponent teams={selectedSportData} />}
 							</DialogContent>
 						</div>
