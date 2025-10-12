@@ -12,6 +12,7 @@ import BestPlayers from "./pages/bestplayer/players";
 import Rulebook from "./pages/rulebook/rulebook";
 import Page404 from "./pages/page404/page404";
 import BestBySports from "./pages/bestplayer/sports";
+import Footer from "./components/footer/Footer";
 
 function App() {
   // const location = useLocation();
@@ -37,6 +38,7 @@ function App() {
         <Route path="/rulebook" element={<Rulebook />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Footer/>
     </Router>
   )
 }
